@@ -1,0 +1,7 @@
+packages/*
+Shortnr.Web*/obj
+Shortnr.Web*/bin
+!packages/repositories.config
+
+*.user
+*.suo
