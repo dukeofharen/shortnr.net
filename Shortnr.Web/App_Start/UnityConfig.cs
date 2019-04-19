@@ -3,7 +3,7 @@ using Shortnr.Web.Business.Implementations;
 using System;
 using System.Web.Http;
 using Unity;
-using Unity.WebApi;
+using Unity.AspNet.WebApi;
 
 namespace Shortnr.Web
 {
@@ -24,7 +24,6 @@ namespace Shortnr.Web
 		public static void RegisterTypes(IUnityContainer container)
 		{
 			container.RegisterType<IUrlManager, UrlManager>();
-			GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
 		}
 	}
 }
